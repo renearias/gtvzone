@@ -1,11 +1,11 @@
 {
   "name": "gtv-bfy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Jquery google tv adapcion, libreria para desarrollo de aplicaciones para smart-TV",
   "homepage": "",
   "author": {
-    "name": "rikhart",
-    "email": "jholarck@gmail.com",
+    "name": "renearias",
+    "email": "renearias@arxis.la",
     "url": ""
   },
   "files": [
@@ -20,7 +20,7 @@
     "mapping",
     "navigation"
   ],
-  "repository": "rikhart/gtv-bfy",
+  "repository": "renearias/gtv-bfy",
   "devDependencies": {
     "gulp": "^3.6.0",
     "gulp-eslint": "^1.0.0",
