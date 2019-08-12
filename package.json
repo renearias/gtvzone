@@ -2,12 +2,8 @@
   "name": "gtvzone",
   "version": "0.0.3",
   "description": "Jquery google tv adapcion, libreria para desarrollo de aplicaciones para smart-TV",
-  "homepage": "",
-  "author": {
-    "name": "renearias",
-    "email": "renearias@arxis.la",
-    "url": ""
-  },
+  "homepage": "https://github.com/renearias/gtvzone#readme",
+  "author": "renearias <renearias@arxis.la>",
   "files": [
     "lib"
   ],
@@ -20,7 +16,10 @@
     "mapping",
     "navigation"
   ],
-  "repository": "renearias/gtvzone",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renearias/gtvzone.git"
+  },
   "devDependencies": {
     "gulp": "^3.6.0",
     "gulp-eslint": "^1.0.0",
@@ -37,5 +36,12 @@
   "license": "MIT",
   "dependencies": {
     "jquery": "^2.1.4"
+  },
+  "bugs": {
+    "url": "https://github.com/renearias/gtvzone/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
