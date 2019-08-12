@@ -1,6 +1,6 @@
 {
-  "name": "gtv-bfy",
-  "version": "0.0.2",
+  "name": "gtvzone",
+  "version": "0.0.3",
   "description": "Jquery google tv adapcion, libreria para desarrollo de aplicaciones para smart-TV",
   "homepage": "",
   "author": {
@@ -20,7 +20,7 @@
     "mapping",
     "navigation"
   ],
-  "repository": "renearias/gtv-bfy",
+  "repository": "renearias/gtvzone",
   "devDependencies": {
     "gulp": "^3.6.0",
     "gulp-eslint": "^1.0.0",
