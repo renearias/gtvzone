@@ -4,23 +4,23 @@
 ## Installation
 
 ```sh
-$ npm install --save gtv-bfy
+$ npm install --save @arxis/gtvzone
 ```
 
 ## Usage
 
 ```js
-var gtvBfy = require('gtv-bfy');
+var gtvBfy = require('@arxis/gtvzone');
 
 gtvBfy('Rainbow');
 ```
 ## License
 
-MIT © [rikhart]()
+MIT © [renearias]()
 
 
 [npm-image]: https://badge.fury.io/js/gtv-bfy.svg
-[npm-url]: https://npmjs.org/package/gtv-bfy
+[npm-url]: https://npmjs.org/package/@arxis/gtvzone
 [travis-image]: https://travis-ci.org/rikhart/gtv-bfy.svg?branch=master
 [travis-url]: https://travis-ci.org/rikhart/gtv-bfy
 [daviddm-image]: https://david-dm.org/rikhart/gtv-bfy.svg?theme=shields.io
