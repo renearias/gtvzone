@@ -1,0 +1,31 @@
+{
+  "name": "@arxis/gtvzone-angular",
+  "version": "1.0.0-alpha.0",
+  "description": "Directivas y servicio de Angular para la navegación espacial de gtvzone",
+  "license": "MIT",
+  "sideEffects": false,
+  "keywords": ["angular", "smart-tv", "tizen", "webos", "spatial-navigation", "focus"],
+  "repository": { "type": "git", "url": "git+https://github.com/renearias/gtvzone.git", "directory": "packages/angular" },
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json -c tsconfig.lib.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@arxis/gtvzone-core": "workspace:^",
+    "@arxis/gtvzone-dom": "workspace:^",
+    "tslib": "^2.8.0"
+  },
+  "peerDependencies": {
+    "@angular/core": ">=16.1.0",
+    "rxjs": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@angular/common": "~22.1.0",
+    "@angular/compiler": "~22.1.0",
+    "@angular/compiler-cli": "~22.1.0",
+    "@angular/core": "~22.1.0",
+    "@angular/platform-browser": "~22.1.0",
+    "ng-packagr": "~22.1.0",
+    "rxjs": "^7.8.0"
+  }
+}

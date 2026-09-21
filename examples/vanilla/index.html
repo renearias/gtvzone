@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>gtvzone · ejemplo vanilla</title>
+  <!-- Solo para el ejemplo: resuelve los paquetes desde los builds locales (pnpm build). -->
+  <script type="importmap">
+    {
+      "imports": {
+        "@arxis/gtvzone-core": "../../packages/core/dist/index.js",
+        "@arxis/gtvzone-dom": "../../packages/dom/dist/index.js"
+      }
+    }
+  </script>
+  <style>
+    body { margin: 0; background: #0b0d12; color: #e8eaf0; font: 20px/1.4 system-ui, sans-serif; display: flex; height: 100vh; }
+    nav { width: 220px; padding: 40px 16px; background: #141821; display: flex; flex-direction: column; gap: 12px; }
+    main { flex: 1; padding: 40px; overflow: hidden; }
+    h2 { margin: 24px 0 12px; font-size: 22px; }
+    .row { display: flex; gap: 16px; }
+    .item, .card { border: 3px solid transparent; border-radius: 8px; background: #222838; }
+    .item { padding: 12px 16px; }
+    .card { width: 220px; height: 124px; display: grid; place-items: center; }
+    .gtv-focused { border-color: #ffd23f; background: #2f3750; }
+    .modal { position: fixed; inset: 0; display: none; place-items: center; background: rgba(0, 0, 0, .7); }
+    .modal.open { display: grid; }
+    .dialog { background: #141821; padding: 32px; border-radius: 12px; display: flex; flex-direction: column; gap: 12px; }
+    #log { position: fixed; bottom: 12px; right: 16px; opacity: .7; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <nav id="menu">
+    <div class="item">Inicio</div>
+    <div class="item">En vivo</div>
+    <div class="item">Buscar</div>
+  </nav>
+  <main id="content">
+    <h2>Continuar viendo</h2>
+    <div class="row" id="row-1"></div>
+    <h2>Recomendados</h2>
+    <div class="row" id="row-2"></div>
+  </main>
+  <div class="modal" id="modal">
+    <div class="dialog" id="dialog">
+      <div class="item">Reproducir</div>
+      <div class="item">Agregar a mi lista</div>
+      <div class="item">Cerrar</div>
+    </div>
+  </div>
+  <div id="log">Flechas para navegar · Enter abre el detalle · Esc cierra</div>
+
+  <script type="module">
+    import { bindZone, createDomNavigation } from '@arxis/gtvzone-dom'
+
+    const rows = { 'row-1': 5, 'row-2': 7 }
+    Object.entries(rows).forEach(([id, count]) => {
+      document.getElementById(id).innerHTML =
+        Array.from({ length: count }, (_, i) => `<div class="card">${id} · ${i + 1}</div>`).join('')
+    })
+
+    const nav = createDomNavigation()
+    const modal = document.getElementById('modal')
+    const log = document.getElementById('log')
+
+    // Zona padre primero: las filas detectan su padre por el DOM.
+    bindZone(nav, '#menu', { item: '.item', strategy: 'list', orientation: 'vertical' })
+    bindZone(nav, '#content', { item: '.card' })
+    bindZone(nav, '#row-1', { item: '.card', strategy: 'list' })
+    bindZone(nav, '#row-2', { item: '.card', strategy: 'list' })
+    bindZone(nav, '#dialog', { item: '.item', strategy: 'list', orientation: 'vertical', layer: 'modal', wrap: true })
+
+    const openModal = () => { modal.classList.add('open'); nav.openLayer('modal') }
+    const closeModal = () => { modal.classList.remove('open'); nav.closeLayer('modal') }
+
+    document.addEventListener('gtvzone:press', event => {
+      if (event.target.closest('#dialog')) closeModal()
+      else if (event.target.classList.contains('card')) openModal()
+    })
+    nav.on('back', () => { if (nav.getState().activeLayer === 'modal') closeModal() })
+    nav.on('focus', ({ id }) => { log.textContent = `foco: ${document.getElementById(id).textContent}` })
+
+    window.nav = nav
+  </script>
+</body>
+</html>

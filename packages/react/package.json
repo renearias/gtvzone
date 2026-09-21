@@ -1,0 +1,40 @@
+{
+  "name": "@arxis/gtvzone-react",
+  "version": "1.0.0-alpha.0",
+  "description": "Hooks y componentes de React para la navegación espacial de gtvzone",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "keywords": ["react", "smart-tv", "tizen", "webos", "spatial-navigation", "focus"],
+  "repository": { "type": "git", "url": "git+https://github.com/renearias/gtvzone.git", "directory": "packages/react" },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@arxis/gtvzone-core": "workspace:^",
+    "use-sync-external-store": "^1.5.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@arxis/gtvzone-dom": "workspace:^",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.0",
+    "@types/use-sync-external-store": "^1.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

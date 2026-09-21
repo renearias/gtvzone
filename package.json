@@ -1,47 +1,23 @@
 {
-  "name": "gtvzone",
-  "version": "0.0.6",
-  "description": "Jquery google tv adapcion, libreria para desarrollo de aplicaciones para smart-TV",
-  "homepage": "https://github.com/renearias/gtvzone#readme",
-  "author": "renearias <renearias@arxis.la>",
-  "files": [
-    "lib"
-  ],
-  "main": "lib/index.js",
-  "keywords": [
-    "smart",
-    "tv",
-    "google",
-    "tv",
-    "mapping",
-    "navigation"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/renearias/gtvzone.git"
-  },
-  "devDependencies": {
-    "gulp": "^3.6.0",
-    "gulp-eslint": "^1.0.0",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.9.0",
-    "gulp-mocha": "^2.0.0",
-    "gulp-plumber": "^1.0.0",
-    "gulp-nsp": "^2.1.0"
+  "name": "gtvzone-monorepo",
+  "private": true,
+  "description": "Navegación espacial para Smart TV: core agnóstico + bindings para DOM, React y Angular",
+  "license": "MIT",
+  "packageManager": "pnpm@11.1.2",
+  "engines": {
+    "node": ">=20"
   },
   "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp"
+    "build": "pnpm -r --workspace-concurrency=1 run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "pnpm -r run typecheck"
   },
-  "license": "MIT",
-  "dependencies": {
-    "jquery": "^2.1.4"
+  "devDependencies": {
+    "jsdom": "^27.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "~6.0.3",
+    "vitest": "^4.0.0"
   },
-  "bugs": {
-    "url": "https://github.com/renearias/gtvzone/issues"
-  },
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  }
+  "type": "module"
 }
