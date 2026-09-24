@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declarationMap": false,
+    "inlineSources": true,
+    "sourceMap": true,
+    "types": []
+  },
+  "angularCompilerOptions": {
+    "compilationMode": "partial",
+    "strictTemplates": true,
+    "strictInjectionParameters": true
+  },
+  "exclude": ["src/**/*.test.ts", "src/test-setup.ts"]
+}
