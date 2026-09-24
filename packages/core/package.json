@@ -1,7 +1,8 @@
 {
   "name": "@arxis/gtvzone-core",
   "version": "1.0.0-alpha.0",
-  "description": "Motor de navegación espacial para Smart TV, sin DOM ni framework",
+  "description": "Framework-agnostic spatial navigation engine for Smart TV apps (Samsung Tizen, LG webOS, Hisense VIDAA, HbbTV, Android TV and more): focus management for D-pad and remote-control input, zero dependencies",
+  "author": "Rene Arias (https://github.com/renearias)",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -16,8 +17,10 @@
     }
   },
   "files": ["dist"],
-  "keywords": ["smart-tv", "tizen", "webos", "spatial-navigation", "focus", "remote-control"],
+  "keywords": ["smart-tv", "tv", "tv-app", "spatial-navigation", "focus-management", "d-pad", "remote-control", "keyboard-navigation", "arrow-keys", "10-foot-ui", "tizen", "samsung-tv", "webos", "lg-webos", "vidaa", "hisense", "hbbtv", "android-tv", "google-tv", "vizio", "smartcast", "fire-tv", "huawei", "aoc", "movistar", "living-apps", "webview", "framework-agnostic", "zero-dependencies", "typescript"],
   "repository": { "type": "git", "url": "git+https://github.com/renearias/gtvzone.git", "directory": "packages/core" },
+  "homepage": "https://github.com/renearias/gtvzone#readme",
+  "bugs": "https://github.com/renearias/gtvzone/issues",
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc --noEmit -p tsconfig.json"
