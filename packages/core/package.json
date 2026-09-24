@@ -1,6 +1,6 @@
 {
   "name": "@arxis/gtvzone-core",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0",
   "description": "Framework-agnostic spatial navigation engine for Smart TV apps (Samsung Tizen, LG webOS, Hisense VIDAA, HbbTV, Android TV and more): focus management for D-pad and remote-control input, zero dependencies",
   "author": "Rene Arias (https://github.com/renearias)",
   "license": "AGPL-3.0-only",
@@ -21,6 +21,7 @@
   "repository": { "type": "git", "url": "git+https://github.com/renearias/gtvzone.git", "directory": "packages/core" },
   "homepage": "https://github.com/renearias/gtvzone#readme",
   "bugs": "https://github.com/renearias/gtvzone/issues",
+  "publishConfig": { "access": "public" },
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc --noEmit -p tsconfig.json"
