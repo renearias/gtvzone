@@ -2,7 +2,7 @@
   "name": "gtvzone-monorepo",
   "private": true,
   "description": "Spatial navigation for Smart TV apps: framework-agnostic core with DOM, React and Angular bindings",
-  "license": "MIT",
+  "license": "AGPL-3.0-only",
   "packageManager": "pnpm@11.1.2",
   "engines": {
     "node": ">=20"

@@ -244,6 +244,14 @@ later, which covers LG webOS 5 and later too. For older engines, transpile the p
 app build.
 </details>
 
+<details>
+<summary><b>Can I use it in a commercial or closed-source TV app?</b></summary>
+
+Yes, in two ways: release your app under the AGPL-3.0 with its source code, or get a
+[commercial license](#commercial-license) and keep your code closed. Personal projects, learning
+and open-source apps can use it for free.
+</details>
+
 ## Migrating from 0.x
 
 0.x was the *Google TV jQuery UI Library* (2010) on jQuery 2. 1.0 is a rewrite:
@@ -259,7 +267,8 @@ app build.
 | `actions.click` | `onPress` / `gtvzone:press` event |
 | `setGlobalKeyMapping` | `bindKeys(nav, { keyMap })` |
 
-The 0.x releases remain on npm as `@arxis/gtvzone`.
+The 0.x releases remain on npm as `@arxis/gtvzone` under their original MIT license
+(© 2015 rikhart).
 
 ## Development
 
@@ -272,8 +281,21 @@ pnpm build       # tsup for core/dom/react, ng-packagr for angular
 
 Tests run against the sibling packages' sources (`src`), no build needed.
 
-Issues and pull requests are welcome, in English or Spanish.
+Issues and pull requests are welcome, in English or Spanish. By sending a pull request you agree
+that your contribution is licensed under `AGPL-3.0-only` and may also be distributed under the
+commercial license.
 
 ## License
 
-MIT © renearias
+Copyright © 2026 Rene Arias.
+
+gtvzone is free software under the [GNU Affero General Public License v3.0](LICENSE)
+(`AGPL-3.0-only`). You can use, modify and share it, in personal and commercial projects alike,
+as long as the app that includes it is also released under the AGPL, with its source code
+available to its users.
+
+### Commercial license
+
+To ship gtvzone in a closed-source app (a streaming, broadcaster or operator app for Samsung, LG,
+Android TV or any other platform) without the AGPL obligations, get a commercial license. Contact
+[Rene Arias](https://github.com/renearias).

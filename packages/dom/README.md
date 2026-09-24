@@ -27,3 +27,8 @@ document.addEventListener('gtvzone:press', e => play(e.target))
 
 The focused item gets the `gtv-focused` class. Full documentation and FAQ in the
 [main README](https://github.com/renearias/gtvzone#readme).
+
+## License
+
+[AGPL-3.0-only](https://github.com/renearias/gtvzone/blob/master/LICENSE) © 2026 Rene Arias. For closed-source apps, a
+[commercial license](https://github.com/renearias/gtvzone#commercial-license) is available.

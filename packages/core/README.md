@@ -28,3 +28,8 @@ nav.on('back', ({ focusedId }) => goBack())
 
 Full documentation, platform support (Samsung Tizen, LG webOS, Hisense VIDAA, HbbTV, Android TV, Fire TV, Vizio, Huawei, AOC, Movistar+) and FAQ in the
 [main README](https://github.com/renearias/gtvzone#readme).
+
+## License
+
+[AGPL-3.0-only](https://github.com/renearias/gtvzone/blob/master/LICENSE) © 2026 Rene Arias. For closed-source apps, a
+[commercial license](https://github.com/renearias/gtvzone#commercial-license) is available.

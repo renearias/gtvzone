@@ -245,6 +245,14 @@ adelante, lo que también cubre LG webOS 5 y posteriores. Para motores más anti
 paquetes en el build de tu app.
 </details>
 
+<details>
+<summary><b>¿Puedo usarlo en una app de TV comercial o de código cerrado?</b></summary>
+
+Sí, de dos formas: publicas tu app bajo la AGPL-3.0 con su código fuente, o adquieres una
+[licencia comercial](#licencia-comercial) y mantienes tu código cerrado. Los proyectos personales,
+de aprendizaje y las apps de código abierto pueden usarlo gratis.
+</details>
+
 ## Migración desde 0.x
 
 La 0.x era el *Google TV jQuery UI Library* (2010) con jQuery 2. La 1.0 es una reescritura:
@@ -260,7 +268,8 @@ La 0.x era el *Google TV jQuery UI Library* (2010) con jQuery 2. La 1.0 es una r
 | `actions.click` | `onPress` / evento `gtvzone:press` |
 | `setGlobalKeyMapping` | `bindKeys(nav, { keyMap })` |
 
-Las versiones 0.x siguen disponibles en npm como `@arxis/gtvzone`.
+Las versiones 0.x siguen disponibles en npm como `@arxis/gtvzone`, con su licencia MIT original
+(© 2015 rikhart).
 
 ## Desarrollo
 
@@ -273,8 +282,21 @@ pnpm build       # tsup para core/dom/react, ng-packagr para angular
 
 Los tests corren contra los fuentes (`src`) de los paquetes hermanos, sin build previo.
 
-Los issues y pull requests son bienvenidos, en español o en inglés.
+Los issues y pull requests son bienvenidos, en español o en inglés. Al enviar un pull request
+aceptas que tu contribución se licencie bajo `AGPL-3.0-only` y que también pueda distribuirse bajo
+la licencia comercial.
 
 ## Licencia
 
-MIT © renearias
+Copyright © 2026 Rene Arias.
+
+gtvzone es software libre bajo la [GNU Affero General Public License v3.0](LICENSE)
+(`AGPL-3.0-only`). Puedes usarlo, modificarlo y compartirlo, tanto en proyectos personales como
+comerciales, siempre que la app que lo incluya también se publique bajo la AGPL, con su código
+fuente disponible para sus usuarios.
+
+### Licencia comercial
+
+Para usar gtvzone en una app de código cerrado (una app de streaming, de un canal o de un operador
+para Samsung, LG, Android TV o cualquier otra plataforma) sin las obligaciones de la AGPL, adquiere
+una licencia comercial. Contacto: [Rene Arias](https://github.com/renearias).

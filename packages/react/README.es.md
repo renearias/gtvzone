@@ -26,3 +26,8 @@ function PlayButton () {
 ```
 
 Documentación completa y preguntas frecuentes en el [README principal](https://github.com/renearias/gtvzone/blob/master/README.es.md).
+
+## Licencia
+
+[AGPL-3.0-only](https://github.com/renearias/gtvzone/blob/master/LICENSE) © 2026 Rene Arias. Para apps de código cerrado hay una
+[licencia comercial](https://github.com/renearias/gtvzone/blob/master/README.es.md#licencia-comercial) disponible.
