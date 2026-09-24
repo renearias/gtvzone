@@ -1,11 +1,14 @@
 {
   "name": "@arxis/gtvzone-angular",
   "version": "1.0.0-alpha.0",
-  "description": "Directivas y servicio de Angular para la navegación espacial de gtvzone",
-  "license": "MIT",
+  "description": "Angular spatial navigation for Smart TV apps (Samsung Tizen, LG webOS, Hisense VIDAA, HbbTV, Android TV and more): standalone directives and a signals service for D-pad and remote-control focus",
+  "author": "Rene Arias (https://github.com/renearias)",
+  "license": "AGPL-3.0-only",
   "sideEffects": false,
-  "keywords": ["angular", "smart-tv", "tizen", "webos", "spatial-navigation", "focus"],
+  "keywords": ["angular", "angular-signals", "angular-directives", "smart-tv", "tv", "tv-app", "spatial-navigation", "focus-management", "d-pad", "remote-control", "keyboard-navigation", "arrow-keys", "10-foot-ui", "tizen", "samsung-tv", "webos", "lg-webos", "vidaa", "hisense", "hbbtv", "android-tv", "google-tv", "vizio", "smartcast", "fire-tv", "huawei", "aoc", "movistar", "living-apps", "webview", "typescript"],
   "repository": { "type": "git", "url": "git+https://github.com/renearias/gtvzone.git", "directory": "packages/angular" },
+  "homepage": "https://github.com/renearias/gtvzone#readme",
+  "bugs": "https://github.com/renearias/gtvzone/issues",
   "scripts": {
     "build": "ng-packagr -p ng-package.json -c tsconfig.lib.json",
     "typecheck": "tsc --noEmit -p tsconfig.json"

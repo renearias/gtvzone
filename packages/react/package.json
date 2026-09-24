@@ -1,8 +1,9 @@
 {
   "name": "@arxis/gtvzone-react",
   "version": "1.0.0-alpha.0",
-  "description": "Hooks y componentes de React para la navegación espacial de gtvzone",
-  "license": "MIT",
+  "description": "React spatial navigation for Smart TV apps (Samsung Tizen, LG webOS, Hisense VIDAA, HbbTV, Android TV and more): useFocusable hook, FocusZone and FocusLayer for D-pad and remote-control focus",
+  "author": "Rene Arias (https://github.com/renearias)",
+  "license": "AGPL-3.0-only",
   "type": "module",
   "sideEffects": false,
   "main": "./dist/index.cjs",
@@ -16,8 +17,10 @@
     }
   },
   "files": ["dist"],
-  "keywords": ["react", "smart-tv", "tizen", "webos", "spatial-navigation", "focus"],
+  "keywords": ["react", "react-hooks", "react-tv", "smart-tv", "tv", "tv-app", "spatial-navigation", "focus-management", "d-pad", "remote-control", "keyboard-navigation", "arrow-keys", "10-foot-ui", "tizen", "samsung-tv", "webos", "lg-webos", "vidaa", "hisense", "hbbtv", "android-tv", "google-tv", "vizio", "smartcast", "fire-tv", "huawei", "aoc", "movistar", "living-apps", "webview", "typescript"],
   "repository": { "type": "git", "url": "git+https://github.com/renearias/gtvzone.git", "directory": "packages/react" },
+  "homepage": "https://github.com/renearias/gtvzone#readme",
+  "bugs": "https://github.com/renearias/gtvzone/issues",
   "scripts": {
     "build": "tsup",
     "typecheck": "tsc --noEmit -p tsconfig.json"
